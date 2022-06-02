@@ -5,9 +5,9 @@ import time
 """
 Uncomment for faster use on Linux
 For use with python 3.6
+"""
 import uvloop
 asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
-"""
 
 async def get_pokemon(client, url):
   resp = await client.get(url)
